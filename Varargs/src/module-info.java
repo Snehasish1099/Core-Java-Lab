@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author Snehasish
+ *
+ */
+module Varargs {
+}
