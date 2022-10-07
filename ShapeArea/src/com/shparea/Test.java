@@ -11,16 +11,33 @@
 
 package com.shparea;
 
+import java.util.Scanner;
+
 public class Test {
+
 	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
 
 		Area a = new Area();
 
-		a.RectangleArea(10f, 5f);
+		// Rectangle
+		System.out.println("Length: ");
+		float length = sc.nextFloat();
+		System.out.println("Breadth: ");
+		float breadth = sc.nextFloat();
+		a.RectangleArea(length, breadth);
 
-		a.SquareArea(9f);
+		// Square
+		System.out.println("Side: ");
+		float side = sc.nextFloat();
+		a.SquareArea(side);
 
-		a.CircleArea(7f);
+		// Circle
+		System.out.println("Radius: ");
+		float radius = sc.nextFloat();
+		a.CircleArea(radius);
 
+		sc.close();
 	}
 }
